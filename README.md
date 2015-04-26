@@ -33,14 +33,23 @@ test: 17.72 (0.983) BLEU-c ; 18.59 (0.983) BLEU
 - Tested on News test 2013 
 
 ```
-17.08 (0.948) BLEU-c ; 17.88 (0.948) BLEU
+test: 17.08 (0.948) BLEU-c ; 17.88 (0.948) BLEU
 ```
 
 ## Use Morfessor during pre-processing to extract morphemes of Czech words 
 
 - Trained Morfessor on toy data (1000 Czech sentences from Europarl) 
+- Trained Moses on 1000 sentences from Europarl
 - Tested on News test 2013
 
 ```
 test: 1.00 (1.489) BLEU-c ; 1.06 (1.489) BLEU
+```
+
+- Trained Morfessor on full Europarl Czech corpus 
+- Trained Moses on 1000 sentences from Europarl
+- Tested on News test 2013
+
+```
+test: 1.02 (1.253) BLEU-c ; 1.09 (1.253) BLEU
 ```
