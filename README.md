@@ -20,7 +20,7 @@ test: 2.22 (0.876) BLEU-c ; 2.35 (0.876) BLEU
 ## Baseline experiment
 
 - Used full Europarl parallel corpus (~600,000 sentences) 
-- Test on News test 2013 
+- Tested on News test 2013 
 
 ```
 test: 17.72 (0.983) BLEU-c ; 18.59 (0.983) BLEU
