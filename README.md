@@ -79,7 +79,19 @@ NIST score = 6.2859  BLEU score = 0.1904
 
 ## HOWTO translate using our model
 
-- Tokenize: perl -ne 'print $1."\n" if /<seg[^>]+>\s*(.*\S)\s*<.seg>/i;' < SRC.sgm > SRC.tok
-- Lowercase: /opt/moses/scripts/tokenizer/lowercase.perl < SRC.tok > SRC.input
-- Filter the model into memory: You need to first wget https://raw.githubusercontent.com/moses-smt/mosesdecoder/master/scripts/training/filter-model-given-input.pl and then change line 118 to the correct path. Then run: perl filter-model-given-input.pl FILTERED_DIR ~/DIR_YOU_TRAINED_YOUR_MODEL/tuning/moses.tuned.ini.* SRC.input
-- Run moses: /opt/moses/bin/moses -f FILTERED_DIR/CONFIG_FILE -i THE_FILE_IN_FILTERED_DIR > OUTPUT_FILE
+- Tokenize: 
+```
+perl -ne 'print $1."\n" if /<seg[^>]+>\s*(.*\S)\s*<.seg>/i;' < SRC.sgm > SRC.tok
+```
+- Lowercase: 
+```
+/opt/moses/scripts/tokenizer/lowercase.perl < SRC.tok > SRC.input
+```
+- Filter the model into memory: You need to first wget https://raw.githubusercontent.com/moses-smt/mosesdecoder/master/scripts/training/filter-model-given-input.pl and then change line 118 to the correct path. Then run: 
+```
+perl filter-model-given-input.pl FILTERED_DIR ~/DIR_YOU_TRAINED_YOUR_MODEL/tuning/moses.tuned.ini.* SRC.input
+```
+- Run moses: 
+```
+/opt/moses/bin/moses -f FILTERED_DIR/CONFIG_FILE -i THE_FILE_IN_FILTERED_DIR > OUTPUT_FILE
+```
