@@ -72,7 +72,11 @@ test: 15.74 (1.071) BLEU-c ; 16.48 (1.071) BLEU
 - Tested on News test 2014
 - Score 100 outputs for each source sentence and output the one with the largest number of intersection
 ```
-NIST score = 6.2859  BLEU score = 0.1904
+Total TER: 0.6890355884250757 (41646.0/60441.0)
+NIST score = 6.6273
+BLEU score (mteval) = 0.2056
+BLEU score (multibleu) = 17.51
+BLEU-c (multibleu) = 15.19
 ```
 
 ## HOWTO translate using our model
