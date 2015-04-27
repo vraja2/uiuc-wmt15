@@ -17,13 +17,20 @@ Vignesh Raja and Yisi Liu
 test: 2.22 (0.876) BLEU-c ; 2.35 (0.876) BLEU
 ``` 
 
-## Baseline experiment
+## Baseline experiments
 
 - Used full Europarl parallel corpus (~600,000 sentences) 
 - Tested on News test 2013 
 
 ```
 test: 17.72 (0.983) BLEU-c ; 18.59 (0.983) BLEU
+```
+
+- Used Europarl parallel corpus and additional news data
+- Tested on News test 2013
+
+```
+test: 19.83 (0.982) BLEU-c ; 20.69 (0.982) BLEU
 ```
 
 ## Stem Czech words
