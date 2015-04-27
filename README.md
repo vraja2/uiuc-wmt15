@@ -69,3 +69,10 @@ test: 1.02 (1.253) BLEU-c ; 1.09 (1.253) BLEU
 test: 15.74 (1.071) BLEU-c ; 16.48 (1.071) BLEU
 ```
 
+## Score 100-best list with pos intersection
+- Trained on the full Europarl data plus Common Crawl and Commentary
+- Tested on News test 2014
+```
+NIST score = 6.2859  BLEU score = 0.1904
+```
+
