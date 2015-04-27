@@ -88,6 +88,7 @@ perl -ne 'print $1."\n" if /<seg[^>]+>\s*(.*\S)\s*<.seg>/i;' < SRC.sgm > SRC.tok
 /opt/moses/scripts/tokenizer/lowercase.perl < SRC.tok > SRC.input
 ```
 - wget https://raw.githubusercontent.com/moses-smt/mosesdecoder/master/scripts/training/strip-xml.perl as a dependency for the next step. Put in folder ../generic
+
 - Filter the model into memory: You need to first wget https://raw.githubusercontent.com/moses-smt/mosesdecoder/master/scripts/training/filter-model-given-input.pl and then change line 118 to the correct path. Then run: 
 ```
 perl filter-model-given-input.pl FILTERED_DIR ~/DIR_YOU_TRAINED_YOUR_MODEL/tuning/moses.tuned.ini.* SRC.input
