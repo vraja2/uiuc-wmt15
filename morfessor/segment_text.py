@@ -2,7 +2,7 @@ import sys
 import morfessor
 
 io = morfessor.MorfessorIO(encoding='ISO_8859-2')
-model = io.read_any_model('model88591.segm')
+model = io.read_any_model('full_model.segm')
 
 stdin = sys.stdin
 
